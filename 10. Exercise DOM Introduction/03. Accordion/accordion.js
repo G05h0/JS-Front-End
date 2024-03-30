@@ -1,13 +1,13 @@
 function toggle() {
-    const extraInfoElement = document.getElementById('extra');
-    const toggleButtonElement = document.querySelector('.head span.button');
+    const extra = document.getElementById('extra');
+    const button = document.getElementsByClassName("button");
 
-    const currentButtonText = toggleButtonElement.textContent;
+    const currentButtonText = button.TextContent;
     if (currentButtonText === 'More') {
-        extraInfoElement.style.display = 'block';
-        toggleButtonElement.textContent = 'Less';
+        button.TextContent = 'Less';
+        extra.style.display = 'block';
     } else {
-        extraInfoElement.style.display = 'none';
-        toggleButtonElement.textContent = 'More';
+        button.TextContent = 'More';
+        extra.style.display = 'none';
     }
 }
